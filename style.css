@@ -1,0 +1,155 @@
+body, body * {
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+}
+header img {
+    width: 300px;
+    height: 100px;
+    margin: 20px;
+}
+main {
+    margin: 20px;
+}
+main h1 {
+    color:#424242;
+    font-size: 46px;
+}
+main p {
+    color: #616161;
+    font-size: 26px;
+}
+main h1, main p {
+    padding: 18px;
+}
+.square {
+    display: block;
+}
+.orange {
+    background-color: orange;
+}
+.purple {
+    background: rgb(165, 2, 165);
+}
+.green {
+    background-color: green;
+}
+.red {
+    background-color: red;
+}
+.pink {
+    background-color: pink;
+}
+.orange, .purple, .green, .red, .pink {
+    width: 95%;
+    height: 350px;
+    border-radius: 5px;
+    padding:20px;
+    margin: 30px 0;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.c, .b {
+    display: none;
+}
+footer {
+    background-color: #eee;
+    padding: 16px;
+    margin: 20px;
+    margin-top:100px;
+}
+.form {
+    display: block;
+    flex-wrap: wrap;
+}
+.form input, .form textarea{
+border: none;
+border-bottom: 1px solid #616161;
+width: 95%;
+background-color: #eee;
+padding: 8px;
+margin: 16px 0;
+font-size: 18px;
+}
+button {
+    height: 60px;
+    width: 95%;
+    background-color: #424242;
+    color:white;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 6px;
+}
+.social {
+    margin-bottom:20px;
+}
+.social a {
+    color: #424242;
+    text-decoration: none;
+    border: 1px solid #616161;
+    border-radius: 5px;
+    font-size: 40px;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    margin: 32px;
+}
+.social a:hover {
+    color: pink;
+    border: 1px solid pink;
+    transition: 500ms;
+}
+button:hover {
+    background-color: pink;
+    transition: 500ms;
+    border: none;
+}
+.right {
+    padding: 32px 16px;
+    color: #616161;
+}
+@media screen and (min-width:768px) {
+    header img {
+        width: 150px;
+        height: 50px;
+        padding-left: 18px;
+    }
+    main h1 {
+        font-size: 32px;
+    }
+    main p {
+        font-size: 16px;
+    }
+    .b, .c {
+        display: flex;
+    }
+    .orange, .purple, .green, .red, .pink {
+        width: 30%;
+        margin: 20px;
+        height: 300px;
+    }
+    .square {
+        display: flex;
+    }
+    .footer {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 58px;
+    }
+    .social {
+        flex: 2;
+    }
+    .form {
+        flex: 3;
+    }
+    .social h2 {
+        margin-left: 20px;
+    }
+    .social a {
+        margin: 32px;
+    }
+    button {
+        width: 20%;
+    }
+}
